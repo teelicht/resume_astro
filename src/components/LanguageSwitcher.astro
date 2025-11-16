@@ -1,0 +1,36 @@
+---
+interface Props {
+  currentLang: 'en' | 'de';
+}
+
+const { currentLang } = Astro.props;
+---
+
+<div class="flex space-x-2">
+  <a
+    href="/"
+    class:list={[
+      "px-2 py-1 text-sm font-medium rounded-md",
+      currentLang === 'en'
+        ? "text-gray-900 bg-white shadow-sm hover:bg-gray-50 dark:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
+        : "text-gray-500 bg-gray-100 hover:bg-gray-200 dark:text-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600"
+    ]}
+    aria-current={currentLang === 'en' ? 'page' : false}
+    aria-label={currentLang === 'en' ? 'Current language: English' : 'Switch to English'}
+  >
+    English
+  </a>
+  <a
+    href="/de"
+    class:list={[
+      "px-2 py-1 text-sm font-medium rounded-md",
+      currentLang === 'de'
+        ? "text-gray-900 bg-white shadow-sm hover:bg-gray-50 dark:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
+        : "text-gray-500 bg-gray-100 hover:bg-gray-200 dark:text-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600"
+    ]}
+    aria-current={currentLang === 'de' ? 'page' : false}
+    aria-label={currentLang === 'de' ? 'Current language: German' : 'Switch to German'}
+  >
+    Deutsch
+  </a>
+</div>

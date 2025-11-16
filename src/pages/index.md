@@ -1,39 +1,51 @@
 ---
-title: Richard Hendriks - Resume
-description: Resume about Richard Hendriks, CEO of Pied Piper.
+title: Thomas Lichtenecker - Resume
+description: Resume about Thomas Lichtenecker.
 layout: ../layouts/Minimalist.astro
 pdfLink: resume.pdf
 ---
 
-# Richard Hendriks
+# Thomas Lichtenecker
 
-**Programmer**
+**About Me**
 
-San Francisco, USA | richard.hendriks@gmail.com | http://richardhendricks.com
-
-Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!
+I'm currently employed at REWE International AG IT as Chief Product Owner for eCommerce Customer Touchpoints. In that role, I'm responsible for building the software stack that enables our online shops. I'm a firm believer in customer experience driven development. I'm passionate about delivering exceptional customer experiences. Agile methods and technical excellence are key factors in my approach to software development.
 
 ## Work Experience
 
-### [Google](https://www.google.com/)
+### [REWE International AG](https://rewe-group.at)
 
-#### Senior Software Engineer | Oct 2022 - Current
+#### Chief Product Owner eCommerce Customer Touchpoints | Jan 2022 - Present
 
-Elit mollit ipsum fugiat enim labore et non. Amet nulla cupidatat esse est qui magna culpa velit magna excepteur proident Lorem aliquip ullamco. Anim culpa sit cillum enim consectetur aliqua id Lorem aute id id laborum. Sit nostrud ea anim et deserunt cillum sint culpa laboris. Nisi magna amet minim esse dolore. Do officia ipsum duis exercitation incididunt irure pariatur.
+Leading the development of the eCommerce customer touchpoints software stack for REWE International AG. Responsible for all the cross-functional teams involved. Embracing agility and technical excellence.
 
-#### Software Engineer | Aug 2018 - Oct 2022
+#### Head of Business Consulting | Oct 2019 - Jan 2022
 
-Elit mollit ipsum fugiat enim labore et non. Amet nulla cupidatat esse est qui magna culpa velit magna excepteur proident Lorem aliquip ullamco. Anim culpa sit cillum enim consectetur aliqua id Lorem aute id id laborum. Sit nostrud ea anim et deserunt cillum sint culpa laboris. Nisi magna amet minim esse dolore. Do officia ipsum duis exercitation incididunt irure pariatur.
+Responsible for business consulting and managing the Portfolio for RIAG.digital, a unit with RIAG IT.
 
-### [Pied Piper](http://piedpiper.com/)
+#### Head of Software Quality | Jun 2017 - Oct 2019
 
-#### CEO/President | Dec 2013 - Dec 2014
+Head of Quality at RIAG Digital.
 
-Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.
+### [s4w straight4ward GmbH](https://www.straight4ward.com)
 
-- Build an algorithm for artist to detect if their music was violating copy right infringement laws
-- Successfully won Techcrunch Disrupt
-- Optimized an algorithm that holds the current world record for Weisman Scores
+#### Founder | Feb 2013 - Apr 2015
+
+Customer Relations, Software Project Management, Financial Administration.
+
+### [Pfizer](https://www.pfizer.com)
+
+#### Development Team Lead | 2009 - Feb 2013
+
+Leading a team of 15 web and mobile application developers, people-, task-, project-management, technical innovation.
+
+#### Technical Project Manager | Jun 2008 - 2009
+
+Managing web project with technical focus, both customer related and internal. Vendor management and communication.
+
+#### Web Developer | Oct 2006 - May 2008
+
+Web development with focus on C#/ASP.NET.
 
 ## Projects
 

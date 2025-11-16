@@ -4,12 +4,20 @@ const main = async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage();
 
+  // Generate English PDF
   await page.goto("http://localhost:4321/", { waitUntil: "networkidle" });
-
   await page.emulateMedia({ media: "screen" });
-
   await page.pdf({
     path: "public/resume.pdf",
+    margin: { top: "50px", bottom: "80px" },
+    printBackground: true,
+  });
+
+  // Generate German PDF
+  await page.goto("http://localhost:4321/de", { waitUntil: "networkidle" });
+  await page.emulateMedia({ media: "screen" });
+  await page.pdf({
+    path: "public/resume-de.pdf",
     margin: { top: "50px", bottom: "80px" },
     printBackground: true,
   });
