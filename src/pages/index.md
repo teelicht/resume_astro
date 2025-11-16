@@ -3,6 +3,7 @@ title: Thomas Lichtenecker - Resume
 description: Resume about Thomas Lichtenecker.
 layout: ../layouts/Minimalist.astro
 pdfLink: resume.pdf
+lang: en
 ---
 
 # Thomas Lichtenecker

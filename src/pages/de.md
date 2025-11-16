@@ -3,6 +3,7 @@ title: Thomas Lichtenecker - Lebenslauf
 description: Lebenslauf von Thomas Lichtenecker.
 layout: ../layouts/Minimalist.astro
 pdfLink: resume-de.pdf
+lang: de
 ---
 
 # Thomas Lichtenecker
@@ -63,9 +64,9 @@ In dieser Rolle verantwortete ich ein Team von 15 Web- und Mobile-Entwicklern. Z
 
 ### Universität Wien 
 
-#### Master, Wirtschaftsinformatik | Sep 2005 - Jun 2011
+#### Magister, Wirtschaftsinformatik | Sep 2005 - Jun 2011
 
-Masterarbeit: "Evaluation of Software Development Paradigms and Processes for Web Application Engineering" (basierend auf Praxiserfahrungen bei Pfizer).
+Magisterarbeit: "Evaluation of Software Development Paradigms and Processes for Web Application Engineering" (basierend auf Praxiserfahrungen bei Pfizer).
 
 #### Bachelor, Wirtschaftsinformatik | Sep 2001 - Jun 2005
 
