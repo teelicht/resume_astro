@@ -8,10 +8,11 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "build:pdf": "PUBLIC_PDF_VIEW=true astro build",
     "preview": "astro preview --port 4325",
     "generate-pdf": "node ./scripts/generate-pdf.js",
-    "generate-pdf:ci": "PUBLIC_PDF_VIEW=true PORT=4325 node ./scripts/generate-pdf.js",
-    "pdf": "pnpm build && start-server-and-test preview http://localhost:4325 generate-pdf:ci",
+    "generate-pdf:ci": "PORT=4325 node ./scripts/generate-pdf.js",
+    "pdf": "pnpm build:pdf && start-server-and-test preview http://localhost:4325 generate-pdf:ci",
     "check": "astro check && tsc --noEmit",
     "test": "astro check && tsc --noEmit"
   },
