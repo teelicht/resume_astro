@@ -7,12 +7,13 @@
     "postinstall": "npx playwright install",
     "dev": "astro dev",
     "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview --port 4325",
     "generate-pdf": "node ./scripts/generate-pdf.js",
-    "generate-pdf:ci": "PDF_VIEW=true start-server-and-test http://localhost:4321 generate-pdf",
-    "prebuild": "astro check && tsc --noEmit",
-    "build": "yarn generate-pdf:ci && astro build",
-    "build:light": "FORCE_THEME=light astro build",
-    "build:dark": "FORCE_THEME=dark astro build"
+    "generate-pdf:ci": "PUBLIC_PDF_VIEW=true PORT=4325 node ./scripts/generate-pdf.js",
+    "pdf": "pnpm build && start-server-and-test preview http://localhost:4325 generate-pdf:ci",
+    "check": "astro check && tsc --noEmit",
+    "test": "astro check && tsc --noEmit"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^5.1.4",
@@ -21,6 +22,7 @@
     "@playwright/test": "^1.52.0",
     "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^22.13.8",
+    "cross-env": "^10.1.0",
     "netlify-plugin-playwright-cache": "^0.0.1",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
@@ -31,6 +33,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "astro": "^5.7.10"
+    "astro": "^5.7.10",
+    "playwright": "^1.56.1"
   }
 }

@@ -7,9 +7,11 @@ pdfLink: resume.pdf
 
 # Thomas Lichtenecker
 
-**About Me**
+## About Me
 
-I'm currently employed at REWE International AG IT as Chief Product Owner for eCommerce Customer Touchpoints. In that role, I'm responsible for building the software stack that enables our online shops. I'm a firm believer in customer experience driven development. I'm passionate about delivering exceptional customer experiences. Agile methods and technical excellence are key factors in my approach to software development.
+I am the Chief Product Owner for eCommerce Customer Touchpoints at REWE International AG (IT), leading a unit of approximately 30 people with full responsibility for the product strategy and development of our online shop software stack. My role also includes complete financial oversight for the unit, from budgeting to controlling.
+
+We navigate a complex enterprise environment, which necessitates a scaled agile approach with a strong emphasis on cross-team dependency management. In all development, I advocate for a customer-centric model, guided by agile principles and a firm commitment to high standards in software engineering.
 
 ## Work Experience
 
@@ -17,54 +19,60 @@ I'm currently employed at REWE International AG IT as Chief Product Owner for eC
 
 #### Chief Product Owner eCommerce Customer Touchpoints | Jan 2022 - Present
 
-Leading the development of the eCommerce customer touchpoints software stack for REWE International AG. Responsible for all the cross-functional teams involved. Embracing agility and technical excellence.
+As the lead for the eCommerce Customer Touchpoints unit (IT) at REWE International AG, I manage three cross-functional product teams. Our scope includes the end-to-end development and maintenance of the online shops (web, Android, iOS), their integration with the internal ERP system, and the management of ETL processes that populate the company data warehouse. We operate using scaled, agile methodologies with a consistent focus on high-quality, sustainable software development.
 
 #### Head of Business Consulting | Oct 2019 - Jan 2022
 
-Responsible for business consulting and managing the Portfolio for RIAG.digital, a unit with RIAG IT.
+My responsibilities included business consulting and portfolio management for RIAG.digital, a unit within REWE International IT. In close collaboration with Agile Coaches, I implemented a comprehensive portfolio planning and reporting system, applying Kanban and Flight Levels methodologies. This process, combined with active stakeholder management, facilitated alignment with strategic business objectives. The setup improved visibility and transparency of portfolio performance, which in turn enabled data-driven decision-making and supported a wider culture of continuous improvement.
 
 #### Head of Software Quality | Jun 2017 - Oct 2019
 
-Head of Quality at RIAG Digital.
+"I managed a team of quality engineers embedded within multiple product teams. My role involved defining the quality assurance and automation strategy across a diverse software stack, which required applying various frameworks (e.g., Cypress, Appium, Cucumber).
 
-### [s4w straight4ward GmbH](https://www.straight4ward.com)
+To centralise test management and improve technical quality, I introduced XRay for Jira as the primary reporting suite and SonarQube to monitor code quality and test coverage.
+
+#### Project Manager | Jun 2015 - Jun 2017
+
+As project manager for the Merkur online shop, I was responsible for its development and launch. I took ownership of the project in a complex state, which involved three development partners and dispersed internal resources operating without a unified process.
+
+My primary objective was to streamline the project. I accomplished this by consolidating the external partners, establishing a central Jira project with a common Scrum process, and implementing monthly management reports.
+
+Concurrently, I worked with the teams to introduce a central git repository with defined workflows, an Artifactory instance for package management, and a new caching infrastructure. The shop was successfully delivered and went into production.
+
+### s4w straight4ward GmbH
 
 #### Founder | Feb 2013 - Apr 2015
 
-Customer Relations, Software Project Management, Financial Administration.
+I co-founded s4w straight4ward GmbH, a consultancy focused on software development and services. We successfully secured the City of Vienna as our primary client, for whom we delivered several mobile applications and a data management solution. After a period of significant strategic change at our main client, I exited the company to seek a new professional challenge.
 
 ### [Pfizer](https://www.pfizer.com)
 
-#### Development Team Lead | 2009 - Feb 2013
+#### From Developer to Development Team Lead | Oct 2006 - Feb 2013
 
-Leading a team of 15 web and mobile application developers, people-, task-, project-management, technical innovation.
+I joined as a C#/ASP.NET developer and transitioned into leadership roles during a period of company growth from 4 to 70 people, first as a Technical Project Manager and then as Development Team Lead.
 
-#### Technical Project Manager | Jun 2008 - 2009
-
-Managing web project with technical focus, both customer related and internal. Vendor management and communication.
-
-#### Web Developer | Oct 2006 - May 2008
-
-Web development with focus on C#/ASP.NET.
-
-## Projects
-
-### [Sillicon Valley](<https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)>)
-
-#### Video Compression for 3D Media
-
-#### Founder | Oct 2014
-
-Innovative middle-out compression algorithm that changes the way we store data.
+As Team Lead, I managed 15 web and mobile developers. My role covered the full scope of team leadership, including people management, project and task management, and setting the technical direction for our applications.
 
 ## Languages
 
-| English        | English     |
+| German        | English     |
 | -------------- | ----------- |
-| Native speaker | Proficiency |
+| Native speaker | Fluent |
 
-## Education
+## Formal Education
 
-### University of Oklahoma
+### University Vienna 
 
-#### Bachelor, Information Technology | Jun 2011 - Jan 2014
+#### Master, Business Informatics | Sep 2005 - Jun 2011
+
+Master Thesis: "Evaluation of Software Development Paradigms and Processes for Web Application Engineering", reflecting on my experience gained during my time at Pfizer.
+
+#### Bachelor, Business Informatics | Sep 2001 - Jun 2005
+
+### Aston University
+
+#### Informatcis | Sep 2005 - Jun 2006
+
+ERASMUS Exchange Programme 
+
+
