@@ -20,7 +20,9 @@ We navigate a complex enterprise environment, which necessitates a scaled agile 
 
 #### Chief Product Owner eCommerce Customer Touchpoints | Jan 2022 - Present
 
-As the lead for the eCommerce Customer Touchpoints unit (IT) at REWE International AG, I manage three cross-functional product teams. Our scope includes the end-to-end development and maintenance of the online shops (web, Android, iOS), their integration with the internal ERP system, and the management of ETL processes that populate the company data warehouse. We operate using scaled, agile methodologies with a consistent focus on high-quality, sustainable software development.
+I manage three cross-functional product teams responsible for the end-to-end development and maintenance of our online shops (web, Android, iOS). My teams also handle their integration with the internal ERP system and manage the ETL processes that populate the company data warehouse. We operate using scaled, agile methodologies with a consistent focus on high-quality, sustainable software development.
+
+Key achievements in this role include the launch of the BILLA online shops in Austria and Czechia, a full migration of all infrastructure to the cloud, and the stabilization of the complete software stack. We also implemented significant accessibility improvements and delivered numerous new features.
 
 #### Head of Business Consulting | Oct 2019 - Jan 2022
 
