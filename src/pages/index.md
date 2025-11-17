@@ -12,9 +12,9 @@ lang: en
 
 ## About Me
 
-I am the Chief Product Owner for eCommerce Customer Touchpoints at REWE International AG (IT), leading a unit of approximately 30 people with full responsibility for the product strategy and development of our online shop software stack. My role also includes complete financial oversight for the unit, from budgeting to controlling.
+I am a product and technology leader focused on building high-performing, agile teams that deliver outstanding customer experiences. As Chief Product Owner at REWE International IT, I lead a unit of 30+ people responsible for our eCommerce software stack, managing everything from product strategy and development to the full budget.
 
-We navigate a complex enterprise environment, which necessitates a scaled agile approach with a strong emphasis on cross-team dependency management. In all development, I advocate for a customer-centric model, guided by agile principles and a firm commitment to high standards in software engineering.
+My approach is deeply rooted in agile principles, but I emphasize practical application over dogma. I believe in using scaling frameworks and Flight Levels to manage complex dependencies and empower teams. I am ultimately driven by creating clear, sustainable systems that allow people to do their best work and deliver real value to customers.
 
 ## Work Experience
 
