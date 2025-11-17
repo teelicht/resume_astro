@@ -20,19 +20,25 @@ const FORCE_THEME = import.meta.env.FORCE_THEME || "";
 const { title, pdfLink, noIndex, description, lang = "en" } = Astro.props
   .frontmatter as Props["frontmatter"];
 
-// Firstname Lastname -> ['F', 'L']
-const initials = title
-  .split(" ")
-  .map(([initial]) => initial!.toUpperCase())
-  .slice(0, 2);
----
 
+---
 <!doctype html>
 <html lang={lang} class={FORCE_THEME}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/site.webmanifest" />
+    
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description || title} />
     {noIndex && <meta name="robots" content="noindex" />}
@@ -57,13 +63,13 @@ const initials = title
             )
           }
           <div
-            class="absolute top-4 rounded-sm bg-indigo-400 px-4 py-1 sm:left-8 sm:top-12"
+            class="absolute top-4 rounded-sm py-1 sm:left-6 sm:top-2"
           >
             <div
-              class="flex h-fit select-none flex-col items-center text-sm font-bold"
+              class="flex h-fit select-none flex-col items-center"
             >
-              {initials.map((initial) => <span>{initial}</span>)}
-            </div>
+            <img src="/favicon.svg" alt="Thomas Lichtenecker Logo" class="w-16 h-16 border-0 bg-transparent" />
+          </div>
           </div>
           {
             !PDF_VIEW && (
@@ -73,6 +79,13 @@ const initials = title
             )
           }
           <slot />
+           {
+             !PDF_VIEW && (
+               <div class="not-prose absolute right-4 top-16">
+                 <Download href={pdfLink} />
+               </div>
+             )
+           }
         </article>
       </div>
     </div>
