@@ -25,7 +25,7 @@ importers:
         specifier: ^5.2.5
         version: 5.2.7
       '@netlify/plugin-lighthouse':
-        specifier: ^6.0.1
+        specifier: ^6.0.4
         version: 6.0.4(typescript@5.9.3)
       '@playwright/test':
         specifier: ^1.52.0
@@ -4091,7 +4091,7 @@ snapshots:
 
   agent-base@6.0.2:
     dependencies:
-      debug: 4.3.4
+      debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
 
@@ -5185,7 +5185,7 @@ snapshots:
   https-proxy-agent@5.0.1:
     dependencies:
       agent-base: 6.0.2
-      debug: 4.3.4
+      debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
 
