@@ -21,3 +21,20 @@ article.minimalist {
     sm:px-24 sm:py-14
     lg:max-w-4xl;
 }
+
+/* Fix table column widths - make first column fit content */
+article.minimalist table {
+  table-layout: auto;
+}
+
+article.minimalist th:first-child,
+article.minimalist td:first-child {
+  width: auto;
+  white-space: nowrap;
+  padding-right: 1rem; /* ~16px of space */
+}
+
+article.minimalist th:last-child,
+article.minimalist td:last-child {
+  width: 100%;
+}

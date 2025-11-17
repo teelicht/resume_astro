@@ -8,6 +8,8 @@ lang: de
 
 # Thomas Lichtenecker
 
+<p style="text-align: right;"><a href="https://www.linkedin.com/in/thomaslichtenecker/">Linkedin</a> | Mödling, Österreich</p>
+
 ## Über mich
 
 Ich bin Chief Product Owner für die Abteilung eCommerce Customer Touchpoints bei der REWE International AG (IT) und leite eine Einheit von etwa 30 Personen. Dabei trage ich die volle Verantwortung für die Produktstrategie und Entwicklung unseres Online-Shop-Software-Stacks. Meine Rolle umfasst auch die vollständige finanzielle Verantwortung für die Einheit, von der Budgetierung bis zum Controlling.
@@ -56,10 +58,12 @@ Ich begann als C#/ASP.NET-Entwickler und stieg parallel zum Unternehmenswachstum
 
 In dieser Rolle verantwortete ich ein Team von 15 Web- und Mobile-Entwicklern. Zu meinen Kernaufgaben zählten die Personalverantwortung, die Projekt- und Aufgabensteuerung sowie die Definition der technischen Strategie.
 
-## Sprachen
+## Staatsbürgerschaft & Sprachen
+
+Ich bin österreichischer Staatsbürger. 
 
 | Deutsch        | Englisch     |
-| -------------- | ----------- |
+| --- | --- |
 | Muttersprache  | Fließend |
 
 ## Ausbildung
