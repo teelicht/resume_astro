@@ -39,9 +39,6 @@ importers:
       cross-env:
         specifier: ^10.1.0
         version: 10.1.0
-      netlify-plugin-playwright-cache:
-        specifier: ^0.0.1
-        version: 0.0.1
       prettier:
         specifier: ^3.5.3
         version: 3.6.2
@@ -2149,9 +2146,6 @@ packages:
   neotraverse@0.6.18:
     resolution: {integrity: sha512-Z4SmBUweYa09+o6pG+eASabEpP6QkQ70yHj351pQoEXIs8uHbaU2DWVmzBANKgflPa47A50PtB2+NgRpQvr7vA==}
     engines: {node: '>= 10'}
-
-  netlify-plugin-playwright-cache@0.0.1:
-    resolution: {integrity: sha512-FECC4DtoYKpGGUNevxXVTE0GdD5LYSWwTPJpHv/WW4VlviTle8QlKBvF3Exfm48TDvZCUR3ofX1Zz+cJWOWBWA==}
 
   netmask@2.0.2:
     resolution: {integrity: sha512-dBpDMdxv9Irdq66304OLfEmQ9tbNRFnFTuZiLo+bD+r332bBmMJ8GBLXklIXXgxd3+v9+KUnZaUR5PJMa75Gsg==}
@@ -5799,8 +5793,6 @@ snapshots:
   negotiator@0.6.4: {}
 
   neotraverse@0.6.18: {}
-
-  netlify-plugin-playwright-cache@0.0.1: {}
 
   netmask@2.0.2: {}
 
