@@ -12,8 +12,8 @@ const { currentLang } = Astro.props;
     class:list={[
       "px-2 py-1 text-sm font-medium rounded-md",
       currentLang === 'en'
-        ? "text-white bg-indigo-600 shadow-md hover:bg-indigo-700 font-semibold dark:text-white dark:bg-indigo-700 dark:hover:bg-indigo-600"
-        : "text-gray-600 bg-gray-200 hover:bg-gray-300 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+        ? "text-white bg-tl-bluegray-500 shadow-md hover:bg-tl-bluegray-600 font-semibold dark:text-white dark:bg-tl-bluegray-600 dark:hover:bg-tl-bluegray-500"
+        : "text-tl-bluegray-700 bg-tl-bluegray-100 hover:bg-tl-bluegray-200 dark:text-tl-bluegray-300 dark:bg-tl-bluegray-800 dark:hover:bg-tl-bluegray-700"
     ]}
     aria-current={currentLang === 'en' ? 'page' : false}
     aria-label={currentLang === 'en' ? 'Current language: English' : 'Switch to English'}
@@ -25,8 +25,8 @@ const { currentLang } = Astro.props;
     class:list={[
       "px-2 py-1 text-sm font-medium rounded-md",
       currentLang === 'de'
-        ? "text-white bg-indigo-600 shadow-md hover:bg-indigo-700 font-semibold dark:text-white dark:bg-indigo-700 dark:hover:bg-indigo-600"
-        : "text-gray-600 bg-gray-200 hover:bg-gray-300 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+        ? "text-white bg-tl-bluegray-500 shadow-md hover:bg-tl-bluegray-600 font-semibold dark:text-white dark:bg-tl-bluegray-600 dark:hover:bg-tl-bluegray-500"
+        : "text-tl-bluegray-700 bg-tl-bluegray-100 hover:bg-tl-bluegray-200 dark:text-tl-bluegray-300 dark:bg-tl-bluegray-800 dark:hover:bg-tl-bluegray-700"
     ]}
     aria-current={currentLang === 'de' ? 'page' : false}
     aria-label={currentLang === 'de' ? 'Current language: German' : 'Switch to German'}
