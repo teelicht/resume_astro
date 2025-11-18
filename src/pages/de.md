@@ -78,7 +78,7 @@ Magisterarbeit: "Evaluation of Software Development Paradigms and Processes for 
 
 #### Bachelor, Wirtschaftsinformatik | Sep 2001 - Jun 2005
 
-### Aston University (Birmingham, UK)
+### Aston University (Birmingham,UK)
 
 #### Informatik | Sep 2005 - Jun 2006
 

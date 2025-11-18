@@ -1,9 +1,25 @@
+:root {
+  --color-tl-bluegray: oklch(53.994% 0.08596 279.12);
+  --color-tl-bluegray-50: oklch(88.288% 0.02051 282.92);
+  --color-tl-bluegray-100: oklch(84.638% 0.02637 281.03);
+  --color-tl-bluegray-200: oklch(77.145% 0.04124 282.26);
+  --color-tl-bluegray-300: oklch(69.67% 0.05417 281.25);
+  --color-tl-bluegray-400: oklch(61.791% 0.07105 280.32);
+  --color-tl-bluegray-500: oklch(53.994% 0.08596 279.12);
+  --color-tl-bluegray-600: oklch(45.372% 0.07201 278.15);
+  --color-tl-bluegray-700: oklch(36.49% 0.05689 279.19);
+  --color-tl-bluegray-800: oklch(27.219% 0.03716 279.22);
+  --color-tl-bluegray-900: oklch(16.788% 0.01665 284.46);
+  --color-tl-bluegray-950: oklch(9.8901% 0.00819 284.8);
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
 
 ::selection {
-  @apply bg-indigo-400 bg-opacity-50 text-white;
+  background-color: var(--color-tl-bluegray-400);
+  color: white;
 }
 
 article.minimalist {
