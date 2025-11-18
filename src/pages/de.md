@@ -70,7 +70,7 @@ Ich bin österreichischer Staatsbürger.
 
 ## Ausbildung
 
-### Universität Wien 
+### Universität Wien und TU Wien
 
 #### Magister, Wirtschaftsinformatik | Sep 2005 - Jun 2011
 
@@ -78,7 +78,7 @@ Magisterarbeit: "Evaluation of Software Development Paradigms and Processes for 
 
 #### Bachelor, Wirtschaftsinformatik | Sep 2001 - Jun 2005
 
-### Aston University
+### Aston University (Birmingham, UK)
 
 #### Informatik | Sep 2005 - Jun 2006
 

@@ -68,7 +68,7 @@ I am an Austrian citizen.
 
 ## Formal Education
 
-### University Vienna 
+### University Vienna and TU Vienna
 
 #### Master, Business Informatics | Sep 2005 - Jun 2011
 
@@ -76,7 +76,7 @@ Master Thesis: "Evaluation of Software Development Paradigms and Processes for W
 
 #### Bachelor, Business Informatics | Sep 2001 - Jun 2005
 
-### Aston University
+### Aston University (Birmingham, UK)
 
 #### Informatcis | Sep 2005 - Jun 2006
 
