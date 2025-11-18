@@ -26,11 +26,11 @@ Mein Antrieb ist es, klare und nachhaltige Systeme zu schaffen, in denen Mensche
 
 Ich führe drei cross-funktionale Produktteams, die für die End-to-End-Entwicklung und Wartung unserer Online-Shops (Web, Android, iOS) verantwortlich sind. Meine Teams steuern zudem deren Integration in das interne ERP-System und verwalten die ETL-Prozesse, die das Data Warehouse des Unternehmens speisen. Wir arbeiten nach skalierten agilen Methoden und legen dabei einen konstanten Fokus auf hochwertige, nachhaltige Softwareentwicklung.
 
-Zu den wesentlichen Erfolgen in dieser Rolle zählen der Launch der BILLA Online-Shops in Österreich und Tschechien, eine vollständige Migration der gesamten Infrastruktur in die Cloud sowie die Stabilisierung des kompletten Software-Stacks. Darüber hinaus haben wir signifikante Verbesserungen im Bereich Barrierefreiheit (Accessibility) umgesetzt und zahlreiche neue Features ausgeliefert.
+Zu den wesentlichen Erfolgen in dieser Rolle zählen der Launch der BILLA Online-Shops in Österreich und Tschechien, eine vollständige Migration der Infrastruktur in die Cloud sowie die Stabilisierung und massive Weiterentwicklung des kompletten Software-Stacks. Darüber hinaus haben wir signifikante Verbesserungen im Bereich Barrierefreiheit (Accessibility) umgesetzt und zahlreiche neue Features ausgeliefert. Parallel dazu wurde das Team stark aufgestock und externe Parter durch interne Mitarbeiter:innen ersetzt. 
 
 #### Head of Business Consulting | Okt 2019 - Jan 2022
 
-Als Verantwortlicher für Business Consulting und Portfoliomanagement bei RIAG.digital (REWE International IT) führte ich, in enger Kooperation mit Agile Coaches, ein neues Portfolio-Planungs- und Berichtswesen ein. Wir nutzten dafür Kanban und die Flight-Levels-Methodik. Durch die Verbindung dieses Systems mit aktivem Stakeholder-Management wurde die strategische Geschäftsausrichtung sichergestellt. Dieses Vorgehen erhöhte die Transparenz der Portfolio-Performance, schuf die Basis für datengestützte Entscheidungen und unterstützte eine Kultur der kontinuierlichen Verbesserung.
+Als Verantwortlicher für Business Consulting und Portfoliomanagement bei RIAG.digital, einer Software Delivery Unit bei REWE International IT, führte ich, in enger Kooperation mit den Agile Coaches, ein neues Portfolio-Planungs- und Berichtswesen ein. Wir nutzten dafür Kanban und die Flight-Levels-Methodik. Durch die Verbindung dieses Systems mit aktivem Stakeholder-Management wurde die strategische Geschäftsausrichtung sichergestellt. Dieses Vorgehen erhöhte die Transparenz der Portfolio-Performance, schuf die Basis für datengestützte Entscheidungen und unterstützte eine Kultur der kontinuierlichen Verbesserung.
 
 #### Head of Software Quality | Jun 2017 - Okt 2019
 

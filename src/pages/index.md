@@ -24,11 +24,11 @@ My approach is deeply rooted in agile principles, but I emphasize practical appl
 
 I manage three cross-functional product teams responsible for the end-to-end development and maintenance of our online shops (web, Android, iOS). My teams also handle their integration with the internal ERP system and manage the ETL processes that populate the company data warehouse. We operate using scaled, agile methodologies with a consistent focus on high-quality, sustainable software development.
 
-Key achievements in this role include the launch of the BILLA online shops in Austria and Czechia, a full migration of all infrastructure to the cloud, and the stabilization of the complete software stack. We also implemented significant accessibility improvements and delivered numerous new features.
+Key achievements in this role include the launch of the BILLA online shops in Austria and Czechia, a full migration of all infrastructure to the cloud, and the stabilization and massive expansion of the complete software stack. We also implemented significant accessibility improvements and delivered numerous new features. In parallel, the team was significantly expanded and external partners were replaced by internal team members.
 
 #### Head of Business Consulting | Oct 2019 - Jan 2022
 
-My responsibilities included business consulting and portfolio management for RIAG.digital, a unit within REWE International IT. In close collaboration with Agile Coaches, I implemented a comprehensive portfolio planning and reporting system, applying Kanban and Flight Levels methodologies. This process, combined with active stakeholder management, facilitated alignment with strategic business objectives. The setup improved visibility and transparency of portfolio performance, which in turn enabled data-driven decision-making and supported a wider culture of continuous improvement.
+My responsibilities included business consulting and portfolio management for RIAG.digital, a software delivery unit within REWE International IT. In close collaboration with Agile Coaches, I implemented a comprehensive portfolio planning and reporting system, applying Kanban and Flight Levels methodologies. This process, combined with active stakeholder management, facilitated alignment with strategic business objectives. The setup improved visibility and transparency of portfolio performance, which in turn enabled data-driven decision-making and supported a wider culture of continuous improvement.
 
 #### Head of Software Quality | Jun 2017 - Oct 2019
 
