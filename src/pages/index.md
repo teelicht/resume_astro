@@ -24,7 +24,7 @@ My approach is deeply rooted in agile principles, but I emphasize practical appl
 
 I manage three cross-functional product teams responsible for the end-to-end development and maintenance of our online shops (web, Android, iOS). My teams also handle their integration with the internal ERP system and manage the ETL processes that populate the company data warehouse. We operate using scaled, agile methodologies with a consistent focus on high-quality, sustainable software development.
 
-Key achievements in this role include the launch of the BILLA online shops in Austria and Czechia, a full migration of all infrastructure to the cloud, and the stabilization and massive expansion of the complete software stack. We also implemented significant accessibility improvements and delivered numerous new features. In parallel, the team was significantly expanded and external partners were replaced by internal team members.
+Key achievements in this role include the launch of the BILLA online shops in Austria and Czechia, a full migration of all infrastructure to the cloud, and the stabilization and massive expansion of the complete software stack. We also implemented significant accessibility improvements and delivered numerous new features. In parallel, the team was expanded by more than 60% and external partners were replaced by internal team members.
 
 #### Head of Business Consulting | Oct 2019 - Jan 2022
 
@@ -32,7 +32,7 @@ My responsibilities included business consulting and portfolio management for RI
 
 #### Head of Software Quality | Jun 2017 - Oct 2019
 
-"I managed a team of quality engineers embedded within multiple product teams. My role involved defining the quality assurance and automation strategy across a diverse software stack, which required applying various frameworks (e.g., Cypress, Appium, Cucumber).
+"I managed a team of quality engineers embedded within multiple product teams. My role involved defining the quality assurance and automation strategy across a diverse software stack, which required applying various frameworks (e.g., Cypress, Appium, Cucumber, Browserstack).
 
 To centralise test management and improve technical quality, I introduced XRay for Jira as the primary reporting suite and SonarQube to monitor code quality and test coverage.
 
@@ -50,13 +50,38 @@ Concurrently, I worked with the teams to introduce a central git repository with
 
 I co-founded s4w straight4ward GmbH, a consultancy focused on software development and services. We successfully secured the City of Vienna as our primary client, for whom we delivered several mobile applications and a data management solution. After a period of significant strategic change at our main client, I exited the company to seek a new professional challenge.
 
-### [Pfizer](https://www.pfizer.com)
+### [Wyeth / Pfizer](https://www.pfizer.com)
 
 #### From Developer to Development Team Lead | Oct 2006 - Feb 2013
 
-I joined as a C#/ASP.NET developer and transitioned into leadership roles during a period of company growth from 4 to 70 people, first as a Technical Project Manager and then as Development Team Lead.
+I joined as a C#/ASP.NET developer and transitioned into leadership roles during a period of company growth from 4 to 70 people, first as a Technical Project Manager and then as Development Team Lead. 
 
 As Team Lead, I managed 15 web and mobile developers. My role covered the full scope of team leadership, including people management, project and task management, and setting the technical direction for our applications.
+
+The team was responsible for delivering websites and mobile applications for countries around the globe, focusing on Pfizer's global brands. 
+
+## Major Successes
+
+- **REWE International AG**:
+  - Launched BILLA online shops in Austria and Czechia during a time of significant transformation and Covid. 
+  - Scaled internal capacity by 60% during the BILLA Shop projects and a phase of major transformation, onboarding and integrating personnel across three teams.
+  - Led a core workstream in a major IT-wide transformation, architecting the current organizational structure and portfolio processes. 
+  - Introduced agile portfolio management and reporting processes for RIAG.digital, a software delivery unit within REWE International IT.
+  - Established tool standards for quality assurance and automation, such as SonarQube, Xray, Browserstack, etc.
+  - Successfully managed the software development project to launch the Merkur online shop.
+
+- **s4w straight4ward GmbH**:
+  - Successfully secured the City of Vienna as the primary client.
+  - Delivered several mobile applications and a data management solution.
+
+- **Pfizer**:
+  - Within a few years, managed a team of 15 web and mobile developers.
+  - Rolled out websites and mobile applications for Pfizer 
+  - Covered the full scope of team leadership, including people management, project and task management, and setting the technical direction for our applications.
+
+## Skills
+  - Leadership: Budget Management (€ 5M+ budgets), Team Leadership, Product Management, Agile Methodologies, Agile Scaling, Vendor Management
+  - Tech: a sound and broad technical foundation, currently again coding with AI-assistance 
 
 ## Citizenship & Languages
 
