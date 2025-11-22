@@ -11,18 +11,6 @@
   --color-tl-bluegray-800: oklch(27.219% 0.03716 279.22);
   --color-tl-bluegray-900: oklch(16.788% 0.01665 284.46);
   --color-tl-bluegray-950: oklch(9.8901% 0.00819 284.8);
-
-  --color-picton-blue-50: #f0f8ff;
-  --color-picton-blue-100: #e1f0fd;
-  --color-picton-blue-200: #bce0fb;
-  --color-picton-blue-300: #80c9f9;
-  --color-picton-blue-400: #39acf3;
-  --color-picton-blue-500: #1393e4;
-  --color-picton-blue-600: #0774c2;
-  --color-picton-blue-700: #075d9d;
-  --color-picton-blue-800: #0a4f82;
-  --color-picton-blue-900: #0e426c;
-  --color-picton-blue-950: #0a2a47;
 }
 
 body {
@@ -47,7 +35,7 @@ article.minimalist {
     dark:bg-slate-800
     prose-h4:dark:text-slate-400  
     sm:px-24 sm:py-14
-    lg:max-w-4xl;
+    lg:max-w-6xl;
 }
 
 /* Fix table column widths - make first column fit content */
