@@ -163,10 +163,10 @@ const t = translations[lang as keyof typeof translations] || translations.en;
               <h4 class="font-semibold text-sm text-gray-900 dark:text-white uppercase tracking-wider mb-2">{t.technology}</h4>
               <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
                 {competencies.technology.map(skill => (
-                 
-                    <span class="w-1.5 h-1.5 bg-gray-700 dark:bg-gray-300 rounded-full mt-1.5 flex-shrink-0"></span>
+                  <li class="flex items-start">
+                    <span class="w-1.5 h-1.5 bg-gray-700 dark:bg-gray-300 rounded-full mt-1.5 flex-shrink-0 mr-2"></span>
                     <span>{skill}</span>
-                 
+                  </li>
                 ))}
               </ul>
             </div>
@@ -264,9 +264,9 @@ const t = translations[lang as keyof typeof translations] || translations.en;
                 <h4 class="font-semibold text-xs text-gray-900 uppercase tracking-wider mb-2">{t.technology}</h4>
                 <ul class="space-y-1 text-sm text-gray-700">
                   {competencies.technology.map(skill => (
-                      <li class="flex items-start">
-                        <span class="w-1 h-1 bg-gray-700 rounded-full mt-1.5 mr-2 flex-shrink-0"></span>
-                        <span>{skill}</span>
+                      <li class="flex items-center">
+                         <span class="w-1 h-1 bg-gray-700 rounded-full mr-2"></span>
+                      {skill}
                       </li>
                   ))}
                 </ul>

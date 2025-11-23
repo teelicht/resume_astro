@@ -29,7 +29,8 @@ competencies:
     - Budget Management (€5M+)
     - Vendor Management
   technology:
-    - A sound and broad technical foundation, recently started building POCs with AI-assistance
+    - Sound and broad technical foundation
+    - Recently started building POCs with AI-assistance
 
 languages:
   - language: German

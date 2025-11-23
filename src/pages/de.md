@@ -28,7 +28,8 @@ competencies:
     - Agile Skalierung
     - Budgetmanagement
   technology:
-    - Ein breites Grundverständis, kürzlich begonnen, mit AI-Assistenten POCs zu bauen
+    - Breites Grundverständis
+    - Implementierung von AI-Assistenten
 
 languages:
   - language: Deutsch
