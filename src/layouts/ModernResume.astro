@@ -26,51 +26,41 @@ interface Props {
       leadership: string[];
       technology: string[];
     };
-    education: {
-      institution: string;
-      degree: string;
-      thesis?: string;
-      year: string;
-    }[];
     languages: {
       language: string;
       level: string;
     }[];
-    experience: {
-      role: string;
-      company: string;
-      period: string;
-      description: string;
-      details?: {
-        label: string;
-        text: string;
-      }[];
-    }[];
-    projects: {
-      name: string;
-      description: string;
-    }[];
+    about?: string;
   };
 }
 
 const PDF_VIEW = import.meta.env.PUBLIC_PDF_VIEW === "true";
 const FORCE_THEME = import.meta.env.FORCE_THEME || "";
 const { frontmatter } = Astro.props;
-const { name, role, socials, facts, competencies, education, languages, experience, pdfLink, lang = 'en' } = frontmatter;
+const { name, role, socials, facts, competencies, languages, pdfLink, lang = 'en' } = frontmatter;
 
-type Job = typeof experience[number];
+const translations = {
+  en: {
+    facts: "Facts",
+    download: "Download Resume",
+    downloadPdf: "Download PDF",
+    competencies: "Core Competencies",
+    leadership: "Leadership",
+    technology: "Technology",
+    languages: "Languages"
+  },
+  de: {
+    facts: "Persönliche Daten",
+    download: "Lebenslauf herunterladen",
+    downloadPdf: "PDF herunterladen",
+    competencies: "Kernkompetenzen",
+    leadership: "Führungskompetenz",
+    technology: "Technologie",
+    languages: "Sprachen"
+  }
+};
 
-const experienceByCompany = experience.reduce((acc, job: Job) => {
-  acc[job.company] = [...(acc[job.company] || []), job];
-  return acc;
-}, {} as Record<string, Job[]>);
-
-type Edu = typeof education[number];
-
-const educationByInstitution = education.reduce((acc, edu: Edu) => {
-  acc[edu.institution] = [...(acc[edu.institution] || []), edu];
-  return acc;
-}, {} as Record<string, Edu[]>);
+const t = translations[lang as keyof typeof translations] || translations.en;
 ---
 
 <!doctype html>
@@ -79,13 +69,9 @@ const educationByInstitution = education.reduce((acc, edu: Edu) => {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-    
     <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    
     <!-- Web App Manifest -->
     <link rel="manifest" href="/site.webmanifest" />
     <title>{frontmatter.title}</title>
@@ -105,7 +91,7 @@ const educationByInstitution = education.reduce((acc, edu: Edu) => {
         <p class="text-xl text-gray-700 dark:text-gray-300 mb-6">{role}</p>
         <div class="flex flex-wrap gap-4">
           {socials.map((social) => (
-            <a href={social.url} class={`inline-flex items-center px-4 py-2 rounded-md transition-colors font-medium ${social.name === 'Contact Me' ? 'bg-picton-blue-900 text-white hover:bg-picton-blue-800' : 'bg-white dark:bg-gray-800 border border-picton-blue-200 dark:border-gray-700 text-picton-blue-700 dark:text-picton-blue-300 hover:bg-picton-blue-50 dark:hover:bg-gray-700'}`}>
+            <a href={social.url} class={`inline-flex items-center px-4 py-2 rounded-md transition-colors font-medium ${social.icon === 'mdi:email' ? 'bg-picton-blue-900 text-white hover:bg-picton-blue-800' : 'bg-white dark:bg-gray-800 border border-picton-blue-200 dark:border-gray-700 text-picton-blue-700 dark:text-picton-blue-300 hover:bg-picton-blue-50 dark:hover:bg-gray-700'}`}>
               <Icon name={social.icon} class={`h-5 w-5 mr-2 ${social.name === 'LinkedIn' ? 'text-[#0077b5]' : ''}`} />
               {social.name}
             </a>
@@ -116,11 +102,11 @@ const educationByInstitution = education.reduce((acc, edu: Edu) => {
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
         
         <!-- Sidebar -->
-        <div class="space-y-6 lg:sticky lg:top-8">
+        <div class="space-y-6 lg:sticky lg:top-8 print:hidden">
           
           <!-- Get in Touch -->
           <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-picton-blue-100 dark:border-gray-700">
-            <h3 class="font-bold text-lg mb-4 text-gray-900 dark:text-white">Facts</h3>
+            <h3 class="font-bold text-lg mb-4 text-gray-900 dark:text-white">{t.facts}</h3>
             <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
               <li class="flex items-start">
                  <Icon name="mdi:email" class="h-5 w-5 mr-2 text-gray-500 dark:text-gray-400 mt-0.5" />
@@ -148,10 +134,10 @@ const educationByInstitution = education.reduce((acc, edu: Edu) => {
           <!-- Download Resume -->
           {!PDF_VIEW && (
             <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-picton-blue-100 dark:border-gray-700">
-              <h3 class="font-bold text-lg mb-4 text-gray-900 dark:text-white">Download Resume</h3>
+              <h3 class="font-bold text-lg mb-4 text-gray-900 dark:text-white">{t.download}</h3>
               <a href={pdfLink} class="flex items-center justify-center w-full px-4 py-2 bg-picton-blue-900 text-white rounded-md hover:bg-picton-blue-800 transition-colors font-medium text-sm">
                 <Icon name="mdi:download" class="h-4 w-4 mr-2" />
-                Download PDF
+                {t.downloadPdf}
               </a>
             </div>
           )
@@ -159,10 +145,10 @@ const educationByInstitution = education.reduce((acc, edu: Edu) => {
 
           <!-- Core Competencies -->
           <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-picton-blue-100 dark:border-gray-700">
-            <h3 class="font-bold text-lg mb-4 text-gray-900 dark:text-white">Core Competencies</h3>
+            <h3 class="font-bold text-lg mb-4 text-gray-900 dark:text-white">{t.competencies}</h3>
             
             <div class="mb-4">
-              <h4 class="font-semibold text-sm text-gray-900 dark:text-white uppercase tracking-wider mb-2">Leadership</h4>
+              <h4 class="font-semibold text-sm text-gray-900 dark:text-white uppercase tracking-wider mb-2">{t.leadership}</h4>
               <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
                 {competencies.leadership.map(skill => (
                   <li class="flex items-center">
@@ -174,7 +160,7 @@ const educationByInstitution = education.reduce((acc, edu: Edu) => {
             </div>
 
             <div>
-              <h4 class="font-semibold text-sm text-gray-900 dark:text-white uppercase tracking-wider mb-2">Technology</h4>
+              <h4 class="font-semibold text-sm text-gray-900 dark:text-white uppercase tracking-wider mb-2">{t.technology}</h4>
               <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
                 {competencies.technology.map(skill => (
                  
@@ -190,7 +176,7 @@ const educationByInstitution = education.reduce((acc, edu: Edu) => {
 
           <!-- Languages -->
           <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-picton-blue-100 dark:border-gray-700">
-            <h3 class="font-bold text-lg mb-4 text-gray-900 dark:text-white">Languages</h3>
+            <h3 class="font-bold text-lg mb-4 text-gray-900 dark:text-white">{t.languages}</h3>
             <div class="space-y-2 text-sm">
               {languages.map(lang => (
                 <div class="flex justify-between">
@@ -204,93 +190,93 @@ const educationByInstitution = education.reduce((acc, edu: Edu) => {
         </div>
 
         <!-- Main Content -->
-        <div class="lg:col-span-2 space-y-8">
-          
-          <!-- About Me -->
-          <section>
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
-            <div class="prose prose-picton-blue dark:prose-invert max-w-none text-gray-700 dark:text-gray-300">
-              <slot />
-            </div>
-          </section>
+        <div class="lg:col-span-2 space-y-8 print:col-span-3 print:w-full">
+          {/* About Me Section (moved from markdown body) */}
+          {frontmatter.about && (
+            <section class="prose prose-picton-blue dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 mb-8">
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">{lang === 'de' ? 'Über Mich' : 'About Me'}</h2>
+              <div class="whitespace-pre-line">{frontmatter.about}</div>
+            </section>
+          )}
 
-          <!-- Work Experience -->
-          <section>
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Experience</h2>
-            
+          {/* Print-only Sidebar Items Grid */}
+          <div class="hidden print:grid grid-cols-2 gap-6 mb-8">
+            {/* Column 1: Facts & Languages */}
             <div class="space-y-6">
-              {Object.entries(experienceByCompany).map(([company, jobs]) => (
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-picton-blue-100 dark:border-gray-700">
-                  <h3 class="font-bold text-xl text-gray-900 dark:text-white mb-4">{company}</h3>
-                  <div class="space-y-4">
-                    {jobs.map(job => (
-                      <div class="border-l-2 border-picton-blue-200 pl-4">
-                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
-                          <div>
-                            <h4 class="font-bold text-lg text-gray-900 dark:text-white">{job.role}</h4>
-                          </div>
-                          <div class="text-sm text-gray-600 dark:text-gray-300 mt-1 sm:mt-0 bg-picton-blue-50 dark:bg-gray-700 px-2 py-1 rounded">{job.period}</div>
-                        </div>
-                        <p class="text-gray-700 dark:text-gray-300 mb-3 text-sm">
-                          {job.description}
-                        </p>
-                        {job.details && job.details.length > 0 && (
-                          <ul class="list-disc list-outside ml-4 space-y-1 text-sm text-gray-700 dark:text-gray-300">
-                            {job.details.map(detail => (
-                              <li><strong>{detail.label}:</strong> {detail.text}</li>
-                            ))}
-                          </ul>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
+              {/* Facts */}
+              <div class="border border-gray-200 p-4 rounded-lg">
+                <h3 class="font-bold text-lg mb-3 text-gray-900">{t.facts}</h3>
+                <ul class="space-y-2 text-sm text-gray-700">
+                  <li class="flex items-start">
+                     <Icon name="mdi:email" class="h-4 w-4 mr-2 text-gray-500 mt-0.5" />
+                     <span>{facts.email}</span>
+                  </li>
+                  <li class="flex items-start">
+                     <Icon name="mdi:map-marker" class="h-4 w-4 mr-2 text-gray-500 mt-0.5" />
+                     <span>{facts.location}</span>
+                  </li>
+                  {facts.nationality && (
+                    <li class="flex items-start">
+                       <Icon name="mdi:flag" class="h-4 w-4 mr-2 text-gray-500 mt-0.5" />
+                       <span>{facts.nationality}</span>
+                    </li>
+                  )}
+                  {facts.birth && (
+                    <li class="flex items-start">
+                       <Icon name="mdi:calendar" class="h-4 w-4 mr-2 text-gray-500 mt-0.5" />
+                       <span>{new Date(facts.birth).toLocaleDateString(lang, { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                    </li>
+                  )}
+                </ul>
+              </div>
 
-          <!-- Education -->
-          <section>
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Education</h2>
-            <div class="space-y-6">
-              {Object.entries(educationByInstitution).map(([institution, degrees]) => (
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-picton-blue-100 dark:border-gray-700">
-                  <h3 class="font-bold text-xl text-gray-900 dark:text-white mb-4">{institution}</h3>
-                  <div class="space-y-4">
-                    {degrees.map(edu => (
-                      <div class="border-l-2 border-picton-blue-200 pl-4">
-                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
-                          <div>
-                            <h4 class="font-bold text-lg text-gray-900 dark:text-white">{edu.degree}</h4>
-                          </div>
-                          <div class="text-sm text-gray-600 dark:text-gray-300 mt-1 sm:mt-0 bg-picton-blue-50 dark:bg-gray-700 px-2 py-1 rounded">{edu.year}</div>
-                        </div>
-                        {edu.thesis && (
-                          <p class="text-gray-700 dark:text-gray-300 mb-3 text-sm">
-                            <strong>Thesis:</strong> {edu.thesis}
-                          </p>
-                        )}
-                      </div>
-                    ))}
-                  </div>
+              {/* Languages */}
+              <div class="border border-gray-200 p-4 rounded-lg">
+                <h3 class="font-bold text-lg mb-3 text-gray-900">{t.languages}</h3>
+                <div class="space-y-2 text-sm">
+                  {languages.map(lang => (
+                    <div class="flex justify-between">
+                      <span class="text-gray-700">{lang.language}</span>
+                      <span class="font-medium text-gray-900">{lang.level}</span>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
             </div>
-          </section>
 
-          <!-- Key Projects 
-          <section>
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">Key Projects & Achievements</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {projects.map(project => (
-                <div class="bg-white p-5 rounded-xl shadow-sm border border-picton-blue-100">
-                  <h3 class="font-bold text-gray-900 mb-2">{project.name}</h3>
-                  <p class="text-sm text-gray-700" set:html={project.description} />
-                </div>
-              ))}
+            {/* Column 2: Competencies */}
+            <div class="border border-gray-200 p-4 rounded-lg">
+              <h3 class="font-bold text-lg mb-3 text-gray-900">{t.competencies}</h3>
+              
+              <div class="mb-4">
+                <h4 class="font-semibold text-xs text-gray-900 uppercase tracking-wider mb-2">{t.leadership}</h4>
+                <ul class="space-y-1 text-sm text-gray-700">
+                  {competencies.leadership.map(skill => (
+                    <li class="flex items-center">
+                      <span class="w-1 h-1 bg-gray-700 rounded-full mr-2"></span>
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <h4 class="font-semibold text-xs text-gray-900 uppercase tracking-wider mb-2">{t.technology}</h4>
+                <ul class="space-y-1 text-sm text-gray-700">
+                  {competencies.technology.map(skill => (
+                      <li class="flex items-start">
+                        <span class="w-1 h-1 bg-gray-700 rounded-full mt-1.5 mr-2 flex-shrink-0"></span>
+                        <span>{skill}</span>
+                      </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </section>
-          -->
+          </div>
+
+          <div class="prose prose-picton-blue dark:prose-invert max-w-none text-gray-700 dark:text-gray-300">
+            <slot />
+          </div>
         </div>
       </div>
     </div>

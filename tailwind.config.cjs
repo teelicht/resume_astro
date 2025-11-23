@@ -5,19 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "tl-bluegray": {
-          50: "var(--color-tl-bluegray-50)",
-          100: "var(--color-tl-bluegray-100)",
-          200: "var(--color-tl-bluegray-200)",
-          300: "var(--color-tl-bluegray-300)",
-          400: "var(--color-tl-bluegray-400)",
-          500: "var(--color-tl-bluegray-500)",
-          600: "var(--color-tl-bluegray-600)",
-          700: "var(--color-tl-bluegray-700)",
-          800: "var(--color-tl-bluegray-800)",
-          900: "var(--color-tl-bluegray-900)",
-          950: "var(--color-tl-bluegray-950)",
-        },
+
         "picton-blue": {
           50: "var(--color-picton-blue-50)",
           100: "var(--color-picton-blue-100)",
