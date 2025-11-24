@@ -65,10 +65,7 @@ My responsibilities included business consulting and portfolio management for RI
 **Head of Software Quality**
 _Jun 2017 - Oct 2019_
 
-I managed a team of quality engineers embedded within the product teams within RIAG.digital, a software delivery unit within REWE International IT.
-
-- **Technologies**: Introduced Jira XRay and SonarQube as standard tools to centralize test management and monitor code quality.
-- **Practices**: Defined the QA and automation strategy across a diverse stack (Cypress, Appium, Browserstack).
+I managed a team of Quality Engineers who were embedded within various product teams. My role involved defining the quality assurance and automation strategy for a diverse software stack, which required the application of various frameworks (e.g., Cypress, Appium, Cucumber). To centralize test management and improve technical quality, I introduced XRay for Jira for test management and reporting. Furthermore, we established SonarQube for monitoring code quality and test coverage.
 
 **Project Manager**
 _Jun 2015 - Jun 2017_
