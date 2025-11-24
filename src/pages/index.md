@@ -30,7 +30,7 @@ competencies:
     - Vendor Management
   technology:
     - Sound and broad technical foundation
-    - Recently started building POCs with AI-assistance
+    - Implementation of AI-assistants
 
 languages:
   - language: German

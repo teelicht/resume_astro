@@ -1,4 +1,7 @@
-:root {
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
   --color-picton-blue-50: #f0f8ff;
   --color-picton-blue-100: #e1f0fd;
   --color-picton-blue-200: #bce0fb;

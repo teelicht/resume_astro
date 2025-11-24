@@ -17,18 +17,18 @@
     "test": "astro check && tsc --noEmit"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "^5.1.4",
     "@fontsource/poppins": "^5.2.5",
     "@netlify/plugin-lighthouse": "^6.0.4",
     "@playwright/test": "^1.52.0",
-    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/typography": "0.5.19",
+    "@tailwindcss/vite": "^4.1.17",
     "@types/node": "^22.13.8",
     "cross-env": "^10.1.0",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "start-server-and-test": "^2.0.11",
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "^4.1.17",
     "typescript": "^5.8.3"
   },
   "dependencies": {
