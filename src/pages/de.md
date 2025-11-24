@@ -1,7 +1,7 @@
 ---
 title: Thomas Lichtenecker - Lebenslauf
 layout: ../layouts/ModernResume.astro
-pdfLink: lebenslauf_thomas-lichtenecker.pdf
+pdfLink: /lebenslauf_thomas-lichtenecker.pdf
 lang: de
 
 name: Thomas Lichtenecker
