@@ -94,7 +94,7 @@ _2005 - 2011_
 
 Magisterarbeit: Evaluation of Software Development Paradigms und Processes for Web Application Engineering, basierend auf meinen Erfahrungen bei Pfizer
 
-### Aston University (Birmingham,UK)
+### Aston University (Birmingham, UK)
 
 **Informatik (Erasmus)**
 _2005 - 2006_

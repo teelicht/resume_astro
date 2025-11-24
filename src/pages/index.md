@@ -95,7 +95,7 @@ _2005 - 2011_
 
 Master Thesis: "Evaluation of Software Development Paradigms and Processes for Web Application Engineering", reflecting on my experience gained during my time at Pfizer.
 
-### Aston University (UK)
+### Aston University (Birmingham, UK)
 
 **Informatics (Erasmus)**
 _2005 - 2006_
