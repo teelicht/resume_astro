@@ -8,7 +8,7 @@ name: Thomas Lichtenecker
 role: Führungskraft für Produkt und Technologie
 
 facts:
-  birth: 1981-09-19
+  birth: 1981-08-19
   location: Mödling, Österreich
   nationality: Österreichische Staatsbürgerschaft
   email: t.lichtenecker@gmail.com
