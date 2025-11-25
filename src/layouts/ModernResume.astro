@@ -72,8 +72,6 @@ const t = translations[lang as keyof typeof translations] || translations.en;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <!-- Web App Manifest -->
-    <link rel="manifest" href="/site.webmanifest" />
     <title>{frontmatter.title}</title>
   </head>
   <body class="bg-gray-50 dark:bg-gray-900 min-h-screen font-sans text-gray-900 dark:text-gray-50">
@@ -108,23 +106,23 @@ const t = translations[lang as keyof typeof translations] || translations.en;
           <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-picton-blue-100 dark:border-gray-700">
             <h3 class="font-bold text-lg mb-4 text-gray-900 dark:text-white">{t.facts}</h3>
             <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
-              <li class="flex items-start">
-                 <Icon name="mdi:email" class="h-5 w-5 mr-2 text-gray-500 dark:text-gray-400 mt-0.5" />
+              <li class="flex items-center">
+                 <Icon name="mdi:email" class="h-5 w-5 mr-2 text-gray-500 dark:text-gray-400" />
                  <a href={`mailto:${facts.email}`} class="hover:text-gray-900 dark:hover:text-white break-all">{facts.email}</a>
               </li>
-              <li class="flex items-start">
-                 <Icon name="mdi:map-marker" class="h-5 w-5 mr-2 text-gray-500 dark:text-gray-400 mt-0.5" />
+              <li class="flex items-center">
+                 <Icon name="mdi:map-marker" class="h-5 w-5 mr-2 text-gray-500 dark:text-gray-400" />
                  <span>{facts.location}</span>
               </li>
               {facts.nationality && (
-                <li class="flex items-start">
-                   <Icon name="mdi:flag" class="h-5 w-5 mr-2 text-gray-500 dark:text-gray-400 mt-0.5" />
+                <li class="flex items-center">
+                   <Icon name="mdi:flag" class="h-5 w-5 mr-2 text-gray-500 dark:text-gray-400" />
                    <span>{facts.nationality}</span>
                 </li>
               )}
               {facts.birth && (
-                <li class="flex items-start">
-                   <Icon name="mdi:calendar" class="h-5 w-5 mr-2 text-gray-500 dark:text-gray-400 mt-0.5" />
+                <li class="flex items-center">
+                   <Icon name="mdi:calendar" class="h-5 w-5 mr-2 text-gray-500 dark:text-gray-400" />
                    <span>{new Date(facts.birth).toLocaleDateString(lang, { year: 'numeric', month: 'long', day: 'numeric' })}</span>
                 </li>
               )}
@@ -207,23 +205,23 @@ const t = translations[lang as keyof typeof translations] || translations.en;
               <div class="border border-gray-200 p-4 rounded-lg">
                 <h3 class="font-bold text-lg mb-3 text-gray-900">{t.facts}</h3>
                 <ul class="space-y-2 text-sm text-gray-700">
-                  <li class="flex items-start">
-                     <Icon name="mdi:email" class="h-4 w-4 mr-2 text-gray-500 mt-0.5" />
+                  <li class="flex items-center">
+                     <Icon name="mdi:email" class="h-4 w-4 mr-2 text-gray-500" />
                      <span>{facts.email}</span>
                   </li>
-                  <li class="flex items-start">
-                     <Icon name="mdi:map-marker" class="h-4 w-4 mr-2 text-gray-500 mt-0.5" />
+                  <li class="flex items-center">
+                     <Icon name="mdi:map-marker" class="h-4 w-4 mr-2 text-gray-500" />
                      <span>{facts.location}</span>
                   </li>
                   {facts.nationality && (
-                    <li class="flex items-start">
-                       <Icon name="mdi:flag" class="h-4 w-4 mr-2 text-gray-500 mt-0.5" />
+                    <li class="flex items-center">
+                       <Icon name="mdi:flag" class="h-4 w-4 mr-2 text-gray-500" />
                        <span>{facts.nationality}</span>
                     </li>
                   )}
                   {facts.birth && (
-                    <li class="flex items-start">
-                       <Icon name="mdi:calendar" class="h-4 w-4 mr-2 text-gray-500 mt-0.5" />
+                    <li class="flex items-center">
+                       <Icon name="mdi:calendar" class="h-4 w-4 mr-2 text-gray-500" />
                        <span>{new Date(facts.birth).toLocaleDateString(lang, { year: 'numeric', month: 'long', day: 'numeric' })}</span>
                     </li>
                   )}
