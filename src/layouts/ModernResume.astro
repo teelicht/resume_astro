@@ -10,6 +10,7 @@ interface Props {
     name: string;
     role: string;
     pdfLink: string;
+    about?: string;
     lang?: 'en' | 'de';
     socials: {
       name: string;
@@ -30,13 +31,17 @@ interface Props {
       language: string;
       level: string;
     }[];
+    leadershipPillars?: {
+      title: string;
+      description: string;
+    }[];
   };
 }
 
 const PDF_VIEW = import.meta.env.PUBLIC_PDF_VIEW === "true";
 const FORCE_THEME = import.meta.env.FORCE_THEME || "";
 const { frontmatter } = Astro.props;
-const { name, role, socials, facts, competencies, languages, pdfLink, lang = 'en' } = frontmatter;
+const { name, role, socials, facts, competencies, languages, pdfLink, leadershipPillars, lang = 'en' } = frontmatter;
 
 const translations = {
   en: {
@@ -264,6 +269,29 @@ const t = translations[lang as keyof typeof translations] || translations.en;
           </div>
 
           <div class="prose prose-picton-blue dark:prose-invert max-w-none text-gray-700 dark:text-gray-300">
+            {/* About Me Section (moved from markdown body) */}
+            {frontmatter.about && (
+              <section class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 !mt-0">{lang === 'de' ? 'Über Mich' : 'About Me'}</h2>
+                <div class="whitespace-pre-line mb-8">{frontmatter.about}</div>
+
+                {/* Leadership Pillars */}
+                {leadershipPillars && leadershipPillars.length > 0 && (
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">{lang === 'de' ? 'Die 4 Säulen meines Führungsstils' : 'The 4 Pillars of My Leadership Style'}</h3>
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {leadershipPillars.map((pillar) => (
+                        <div class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-picton-blue-100 dark:border-gray-700 break-inside-avoid print:border-gray-200 print:shadow-none print:rounded-lg">
+                          <h4 class="font-bold text-lg mb-2 text-gray-900 dark:text-white">{pillar.title}</h4>
+                          <p class="text-sm text-gray-700 dark:text-gray-300">{pillar.description}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </section>
+            )}
+
             <slot />
           </div>
         </div>
@@ -271,3 +299,4 @@ const t = translations[lang as keyof typeof translations] || translations.en;
     </div>
   </body>
 </html>
+
