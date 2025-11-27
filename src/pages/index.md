@@ -37,11 +37,27 @@ languages:
     level: Native
   - language: English
     level: Fluent
-about: |
-  I am a product and technology leader focused on building agile teams that deliver sustainable customer value. As Chief Product Owner at REWE International IT, I lead a unit of 30+ people responsible for our eCommerce software stack, managing product strategy, development, and budget.
-
-  My approach is deeply rooted in agile principles, but I emphasize practical application over dogma. I utilize scaling frameworks and Flight Levels to manage dependencies and empower teams. My goal is to create clear systems that allow people to do their best work.
 ---
+
+## About Me
+
+I am a product and technology leader focused on building agile teams that deliver sustainable customer value. As Chief Product Owner at REWE International IT, I lead a unit of 30+ people responsible for our eCommerce software stack, managing product strategy, development, and budget.
+
+My approach is deeply rooted in agile principles, but I emphasize practical application over dogma. I utilize scaling frameworks and Flight Levels to manage dependencies and empower teams. My goal is to create clear systems that allow people to do their best work.
+
+### The 4 Pillars of My Leadership Style
+
+**Trust**
+Trust does not need to be earned first; it is given in advance. I am convinced that we all possess the inner drive to do great work and to celebrate successes together.
+
+**Openness**
+Psychological safety is the foundation of goal-oriented collaboration. Only those who dare to take risks and address mistakes openly can move organisations forward. I view open communication as the fuel for team development.
+
+**Excellenz**
+I enjoy working with people who are better in their field than I am – that is my standard for a strong team. The specialists know the "how"; I provide the "why" and the appropriate framework.
+
+**Empowerment**
+Standing still is not an option. I consider it my duty to recognise and foster individual potential. Employee development is not just a gain for the organisation, but a necessary investment in the personal future of every single individual.
 
 ## Work Experience
 

@@ -36,11 +36,27 @@ languages:
     level: Muttersprache
   - language: Englisch
     level: Fließend
-about: |
-  Als Führungskraft für Produkt und Technologie konzentriere ich mich auf den Aufbau leistungsstarker, agiler Teams, die erstklassige Kundenerlebnisse schaffen. Bei REWE International IT leite ich als Chief Product Owner eine Einheit von über 30 Personen und verantworte den eCommerce-Software-Stack – von der Produktstrategie über die Entwicklung bis hin zur vollen Budgethoheit.
-
-  Mein Ansatz basiert auf agilen Prinzipien, wobei mir die praktische Anwendung wichtiger ist als starre Dogmen. Ich nutze Skalierungsframeworks und und Flight Levels, um komplexe Abhängigkeiten zu steuern und die Eigenverantwortung der Teams zu stärken. Mein Antrieb ist es, klare und nachhaltige Systeme zu schaffen, in denen Menschen ihr volles Potenzial entfalten und echten Kundennutzen stiften können.
 ---
+
+## Über Mich
+
+Als Führungskraft für Produkt und Technologie konzentriere ich mich auf den Aufbau leistungsstarker, agiler Teams, die erstklassige Kundenerlebnisse schaffen. Bei REWE International IT leite ich als Chief Product Owner eine Einheit von über 30 Personen und verantworte den eCommerce-Software-Stack – von der Produktstrategie über die Entwicklung bis hin zur vollen Budgethoheit.
+
+Mein Ansatz basiert auf agilen Prinzipien, wobei mir die praktische Anwendung wichtiger ist als starre Dogmen. Ich nutze Skalierungsframeworks und und Flight Levels, um komplexe Abhängigkeiten zu steuern und die Eigenverantwortung der Teams zu stärken. Mein Antrieb ist es, klare und nachhaltige Systeme zu schaffen, in denen Menschen ihr volles Potenzial entfalten und echten Kundennutzen stiften können.
+
+### Die 4 Säulen meines Führungsstils
+
+**Vertrauen**
+Mein Vertrauen muss man sich nicht erst verdienen – es ist ein Vorschuss. Ich bin davon überzeugt, dass Menschen den inneren Antrieb haben, großartige Arbeit zu leisten und gemeinsam Erfolge zu feiern.
+
+**Offenheit**
+Psychologische Sicherheit ist für mich die Basis der Zusammenarbeit. Nur wer sich traut, Risiken einzugehen und Fehler offen anzusprechen, bringt Organisationen voran. Offene Worte verstehe ich als Treibstoff für die Weiterentwicklung des Teams.
+
+**Exzellenz**
+Ich arbeite gerne mit Menschen, die in ihrem Fachgebiet besser sind als ich – das ist mein Anspruch an ein starkes Team. Die Spezialisten wissen das „Wie“, ich sorge für das „Wozu“ und die passenden Rahmenbedingungen.
+
+**Empowerment**
+Stillstand ist keine Option. Ich sehe es als meine Pflicht, das Potenzial des Einzelnen zu erkennen und zu fördern. Die Weiterentwicklung der Mitarbeitenden ist nicht nur ein Gewinn für die Organisation, sondern eine notwendige Investition in die persönliche Zukunft jedes Einzelnen.
 
 ## Berufserfahrung
 

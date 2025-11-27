@@ -30,7 +30,6 @@ interface Props {
       language: string;
       level: string;
     }[];
-    about?: string;
   };
 }
 
@@ -189,14 +188,6 @@ const t = translations[lang as keyof typeof translations] || translations.en;
 
         <!-- Main Content -->
         <div class="lg:col-span-2 space-y-8 print:col-span-3 print:w-full">
-          {/* About Me Section (moved from markdown body) */}
-          {frontmatter.about && (
-            <section class="prose prose-picton-blue dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 mb-8">
-              <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">{lang === 'de' ? 'Über Mich' : 'About Me'}</h2>
-              <div class="whitespace-pre-line">{frontmatter.about}</div>
-            </section>
-          )}
-
           {/* Print-only Sidebar Items Grid */}
           <div class="hidden print:grid grid-cols-2 gap-6 mb-8">
             {/* Column 1: Facts & Languages */}
