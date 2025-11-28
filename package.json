@@ -36,6 +36,7 @@
     "@iconify-json/mdi": "^1.2.3",
     "astro": "^5.7.10",
     "astro-icon": "^1.1.5",
+    "marked": "^17.0.1",
     "playwright": "^1.56.1"
   }
 }

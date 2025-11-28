@@ -2,17 +2,17 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --color-picton-blue-50: #f0f8ff;
-  --color-picton-blue-100: #e1f0fd;
-  --color-picton-blue-200: #bce0fb;
-  --color-picton-blue-300: #80c9f9;
-  --color-picton-blue-400: #39acf3;
-  --color-picton-blue-500: #1393e4;
-  --color-picton-blue-600: #0774c2;
-  --color-picton-blue-700: #075d9d;
-  --color-picton-blue-800: #0a4f82;
-  --color-picton-blue-900: #0e426c;
-  --color-picton-blue-950: #0a2a47;
+  --color-indigo-50: #eef2ff;
+  --color-indigo-100: #e0e7ff;
+  --color-indigo-200: #c7d2fe;
+  --color-indigo-300: #a5b4fc;
+  --color-indigo-400: #818cf8;
+  --color-indigo-500: #6366f1;
+  --color-indigo-600: #4f46e5;
+  --color-indigo-700: #4338ca;
+  --color-indigo-800: #3730a3;
+  --color-indigo-900: #312e81;
+  --color-indigo-950: #1e1b4b;
 }
 
 body {
@@ -20,8 +20,8 @@ body {
 }
 
 ::selection {
-  background-color: var(--color-picton-blue-400);
-  color: white;
+  background-color: var(--color-indigo-100);
+  color: var(--color-indigo-800);
 }
 
 @media print {
@@ -35,15 +35,23 @@ body {
   }
 
   /* Prevent awkward breaks */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     break-after: avoid;
   }
 
-  p, li {
+  p,
+  li {
     break-inside: avoid;
   }
 
-  section, .card, .bg-white {
+  section,
+  .card,
+  .bg-white {
     break-inside: avoid;
   }
 }

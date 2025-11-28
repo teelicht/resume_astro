@@ -4,16 +4,18 @@ interface Props {
 }
 
 const { currentLang } = Astro.props;
+
+const commonClasses = "px-3 py-1.5 rounded-md text-sm font-medium transition-colors";
+const activeClasses = "bg-indigo-50 text-indigo-800 shadow-sm cursor-default";
+const inactiveClasses = "text-slate-500 hover:text-slate-900";
 ---
 
-<div class="flex space-x-2">
+<div class="bg-white p-1 rounded-lg border border-slate-200 shadow-sm inline-flex">
   <a
     href="/"
     class:list={[
-      "px-2 py-1 text-sm font-medium rounded-md",
-      currentLang === 'en'
-        ? "text-white bg-picton-blue-900 shadow-md hover:bg-picton-blue-800 font-semibold dark:text-white dark:bg-picton-blue-800 dark:hover:bg-picton-blue-700"
-        : "text-picton-blue-700 bg-white border border-picton-blue-200 hover:bg-picton-blue-50 dark:text-picton-blue-300 dark:bg-gray-900 dark:border-picton-blue-800 dark:hover:bg-gray-800"
+      commonClasses,
+      currentLang === 'en' ? activeClasses : inactiveClasses
     ]}
     aria-current={currentLang === 'en' ? 'page' : false}
     aria-label={currentLang === 'en' ? 'Current language: English' : 'Switch to English'}
@@ -23,10 +25,8 @@ const { currentLang } = Astro.props;
   <a
     href="/de"
     class:list={[
-      "px-2 py-1 text-sm font-medium rounded-md",
-      currentLang === 'de'
-        ? "text-white bg-picton-blue-900 shadow-md hover:bg-picton-blue-800 font-semibold dark:text-white dark:bg-picton-blue-800 dark:hover:bg-picton-blue-700"
-        : "text-picton-blue-700 bg-white border border-picton-blue-200 hover:bg-picton-blue-50 dark:text-picton-blue-300 dark:bg-gray-900 dark:border-picton-blue-800 dark:hover:bg-gray-800"
+      commonClasses,
+      currentLang === 'de' ? activeClasses : inactiveClasses
     ]}
     aria-current={currentLang === 'de' ? 'page' : false}
     aria-label={currentLang === 'de' ? 'Current language: German' : 'Switch to German'}

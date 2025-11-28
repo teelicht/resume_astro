@@ -15,7 +15,7 @@ const main = async () => {
     format: "A4",
     margin: { top: "20px", bottom: "40px", left: "20px", right: "20px" },
     printBackground: false,
-    scale: 0.68,
+    scale: 0.9,
   });
 
   // Generate German PDF
@@ -26,7 +26,7 @@ const main = async () => {
     format: "A4",
     margin: { top: "20px", bottom: "40px", left: "20px", right: "20px" },
     printBackground: false,
-    scale: 0.68,
+    scale: 0.9,
   });
 
   return browser.close();

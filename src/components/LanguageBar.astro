@@ -1,0 +1,19 @@
+---
+interface Props {
+  language: string;
+  level: string;
+  percent: number;
+}
+
+const { language, level, percent } = Astro.props;
+---
+
+<div>
+  <div class="flex justify-between items-center text-sm">
+    <span class="font-medium text-slate-700">{language}</span>
+    <span class="text-slate-500">{level}</span>
+  </div>
+  <div class="w-full bg-slate-100 rounded-full h-1.5 mt-1">
+    <div class="bg-indigo-500 h-1.5 rounded-full" style={`width: ${percent}%`}></div>
+  </div>
+</div>

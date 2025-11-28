@@ -1,0 +1,24 @@
+---
+interface Props {
+  title: string;
+  company: string;
+  date: string;
+  current?: boolean;
+}
+
+const { title, company, date, current = false } = Astro.props;
+---
+
+<div class="relative pl-8">
+  <div class={`absolute -left-[9px] top-1 h-4 w-4 rounded-full border-4 shadow-sm print:shadow-none ${current ? 'bg-white border-indigo-800' : 'bg-slate-300 border-slate-300'}`}></div>
+  <div class={`bg-white rounded-xl p-6 shadow-sm border border-slate-100 transition-shadow print:shadow-none print:border-slate-300 ${current ? 'hover:shadow-md ring-1 ring-indigo-50/50' : 'hover:shadow-md'}`}>
+    <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-2">
+      <h3 class="text-lg font-bold text-slate-900">{title}</h3>
+      <span class={`text-sm font-medium px-3 py-1 rounded-full w-fit mt-2 sm:mt-0 shadow-sm print:shadow-none ${current ? 'text-indigo-800 bg-indigo-50' : 'text-slate-500 bg-slate-100'}`}>{date}</span>
+    </div>
+    <div class="text-sm text-slate-500 font-medium mb-4">{company}</div>
+    <div class="text-slate-600 text-sm space-y-2">
+      <slot />
+    </div>
+  </div>
+</div>

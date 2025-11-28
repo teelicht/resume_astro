@@ -1,0 +1,25 @@
+---
+interface Props {
+  title: string;
+  skills: string[];
+  color?: 'indigo' | 'teal';
+}
+
+const { title, skills, color = 'indigo' } = Astro.props;
+
+const colorClasses = {
+  indigo: 'text-indigo-800',
+  teal: 'text-teal-800'
+};
+---
+
+<div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 print:shadow-none print:border-slate-300">
+  <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4">{title}</h3>
+  <div class="flex flex-wrap gap-2">
+    {skills.map(skill => (
+      <span class={`px-3 py-1 bg-slate-100 rounded-full text-xs font-medium ${colorClasses[color]}`}>
+        {skill}
+      </span>
+    ))}
+  </div>
+</div>
