@@ -45,6 +45,16 @@ leadershipPillars:
     description: Ich arbeite gerne mit Menschen, die in ihrem Fachgebiet besser sind als ich – das ist mein Anspruch an ein starkes Team. Die Spezialisten wissen das „Wie“, ich sorge für das „Wozu“ und die passenden Rahmenbedingungen.
   - title: Empowerment
     description: Stillstand ist keine Option. Ich sehe es als meine Pflicht, das Potenzial des Einzelnen zu erkennen und zu fördern. Die Weiterentwicklung der Mitarbeitenden ist nicht nur ein Gewinn für die Organisation, sondern eine notwendige Investition in die persönliche Zukunft jedes Einzelnen.
+strings:
+  facts: Persönliche Daten
+  download: Lebenslauf herunterladen
+  downloadPdf: PDF herunterladen
+  competencies: Kernkompetenzen
+  leadership: Führungskompetenz
+  technology: Technologie
+  languages: Sprachen
+  leadershipPillarsTitle: Die 4 Säulen meines Führungsstils
+  aboutTitle: Über Mich
 about: |
   Als Führungskraft für Produkt und Technologie konzentriere ich mich auf den Aufbau leistungsstarker, agiler Teams, die erstklassige Kundenerlebnisse schaffen. Bei REWE International IT leite ich als Chief Product Owner eine Einheit von über 30 Personen und verantworte den eCommerce-Software-Stack – von der Produktstrategie über die Entwicklung bis hin zur vollen Budgethoheit.
 

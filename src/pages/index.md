@@ -46,6 +46,16 @@ leadershipPillars:
     description: I enjoy working with people who are better in their field than I am – that is my standard for a strong team. The specialists know the "how"; I provide the "why" and the appropriate framework.
   - title: Empowerment
     description: Standing still is not an option. I consider it my duty to recognise and foster individual potential. Employee development is not just a gain for the organisation, but a necessary investment in the personal future of every single individual.
+strings:
+  facts: Facts
+  download: Download Resume
+  downloadPdf: Download PDF
+  competencies: Core Competencies
+  leadership: Leadership
+  technology: Technology
+  languages: Languages
+  leadershipPillarsTitle: The 4 Pillars of My Leadership Style
+  aboutTitle: About Me
 about: |
   I am a product and technology leader focused on building agile teams that deliver sustainable customer value. As Chief Product Owner at REWE International IT, I lead a unit of 30+ people responsible for our eCommerce software stack, managing product strategy, development, and budget.
 

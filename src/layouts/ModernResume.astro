@@ -35,36 +35,24 @@ interface Props {
       title: string;
       description: string;
     }[];
+    strings: {
+      facts: string;
+      download: string;
+      downloadPdf: string;
+      competencies: string;
+      leadership: string;
+      technology: string;
+      languages: string;
+      leadershipPillarsTitle: string;
+      aboutTitle: string;
+    };
   };
 }
 
 const PDF_VIEW = import.meta.env.PUBLIC_PDF_VIEW === "true";
 const FORCE_THEME = import.meta.env.FORCE_THEME || "";
 const { frontmatter } = Astro.props;
-const { name, role, socials, facts, competencies, languages, pdfLink, leadershipPillars, lang = 'en' } = frontmatter;
-
-const translations = {
-  en: {
-    facts: "Facts",
-    download: "Download Resume",
-    downloadPdf: "Download PDF",
-    competencies: "Core Competencies",
-    leadership: "Leadership",
-    technology: "Technology",
-    languages: "Languages"
-  },
-  de: {
-    facts: "Persönliche Daten",
-    download: "Lebenslauf herunterladen",
-    downloadPdf: "PDF herunterladen",
-    competencies: "Kernkompetenzen",
-    leadership: "Führungskompetenz",
-    technology: "Technologie",
-    languages: "Sprachen"
-  }
-};
-
-const t = translations[lang as keyof typeof translations] || translations.en;
+const { name, role, socials, facts, competencies, languages, pdfLink, leadershipPillars, strings, lang = 'en' } = frontmatter;
 ---
 
 <!doctype html>
@@ -108,7 +96,7 @@ const t = translations[lang as keyof typeof translations] || translations.en;
           
           <!-- Get in Touch -->
           <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-picton-blue-100 dark:border-gray-700">
-            <h3 class="font-bold text-lg mb-4 text-gray-900 dark:text-white">{t.facts}</h3>
+            <h3 class="font-bold text-lg mb-4 text-gray-900 dark:text-white">{strings.facts}</h3>
             <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
               <li class="flex items-center">
                  <Icon name="mdi:email" class="h-5 w-5 mr-2 text-gray-500 dark:text-gray-400" />
@@ -136,10 +124,10 @@ const t = translations[lang as keyof typeof translations] || translations.en;
           <!-- Download Resume -->
           {!PDF_VIEW && (
             <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-picton-blue-100 dark:border-gray-700">
-              <h3 class="font-bold text-lg mb-4 text-gray-900 dark:text-white">{t.download}</h3>
+              <h3 class="font-bold text-lg mb-4 text-gray-900 dark:text-white">{strings.download}</h3>
               <a href={pdfLink} class="flex items-center justify-center w-full px-4 py-2 bg-picton-blue-900 text-white rounded-md hover:bg-picton-blue-800 transition-colors font-medium text-sm">
                 <Icon name="mdi:download" class="h-4 w-4 mr-2" />
-                {t.downloadPdf}
+                {strings.downloadPdf}
               </a>
             </div>
           )
@@ -147,10 +135,10 @@ const t = translations[lang as keyof typeof translations] || translations.en;
 
           <!-- Core Competencies -->
           <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-picton-blue-100 dark:border-gray-700">
-            <h3 class="font-bold text-lg mb-4 text-gray-900 dark:text-white">{t.competencies}</h3>
+            <h3 class="font-bold text-lg mb-4 text-gray-900 dark:text-white">{strings.competencies}</h3>
             
             <div class="mb-4">
-              <h4 class="font-semibold text-sm text-gray-900 dark:text-white uppercase tracking-wider mb-2">{t.leadership}</h4>
+              <h4 class="font-semibold text-sm text-gray-900 dark:text-white uppercase tracking-wider mb-2">{strings.leadership}</h4>
               <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
                 {competencies.leadership.map(skill => (
                   <li class="flex items-center">
@@ -162,7 +150,7 @@ const t = translations[lang as keyof typeof translations] || translations.en;
             </div>
 
             <div>
-              <h4 class="font-semibold text-sm text-gray-900 dark:text-white uppercase tracking-wider mb-2">{t.technology}</h4>
+              <h4 class="font-semibold text-sm text-gray-900 dark:text-white uppercase tracking-wider mb-2">{strings.technology}</h4>
               <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
                 {competencies.technology.map(skill => (
                   <li class="flex items-start">
@@ -178,7 +166,7 @@ const t = translations[lang as keyof typeof translations] || translations.en;
 
           <!-- Languages -->
           <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-picton-blue-100 dark:border-gray-700">
-            <h3 class="font-bold text-lg mb-4 text-gray-900 dark:text-white">{t.languages}</h3>
+            <h3 class="font-bold text-lg mb-4 text-gray-900 dark:text-white">{strings.languages}</h3>
             <div class="space-y-2 text-sm">
               {languages.map(lang => (
                 <div class="flex justify-between">
@@ -199,7 +187,7 @@ const t = translations[lang as keyof typeof translations] || translations.en;
             <div class="space-y-6">
               {/* Facts */}
               <div class="border border-gray-200 p-4 rounded-lg">
-                <h3 class="font-bold text-lg mb-3 text-gray-900">{t.facts}</h3>
+                <h3 class="font-bold text-lg mb-3 text-gray-900">{strings.facts}</h3>
                 <ul class="space-y-2 text-sm text-gray-700">
                   <li class="flex items-center">
                      <Icon name="mdi:email" class="h-4 w-4 mr-2 text-gray-500" />
@@ -226,7 +214,7 @@ const t = translations[lang as keyof typeof translations] || translations.en;
 
               {/* Languages */}
               <div class="border border-gray-200 p-4 rounded-lg">
-                <h3 class="font-bold text-lg mb-3 text-gray-900">{t.languages}</h3>
+                <h3 class="font-bold text-lg mb-3 text-gray-900">{strings.languages}</h3>
                 <div class="space-y-2 text-sm">
                   {languages.map(lang => (
                     <div class="flex justify-between">
@@ -240,10 +228,10 @@ const t = translations[lang as keyof typeof translations] || translations.en;
 
             {/* Column 2: Competencies */}
             <div class="border border-gray-200 p-4 rounded-lg">
-              <h3 class="font-bold text-lg mb-3 text-gray-900">{t.competencies}</h3>
+              <h3 class="font-bold text-lg mb-3 text-gray-900">{strings.competencies}</h3>
               
               <div class="mb-4">
-                <h4 class="font-semibold text-xs text-gray-900 uppercase tracking-wider mb-2">{t.leadership}</h4>
+                <h4 class="font-semibold text-xs text-gray-900 uppercase tracking-wider mb-2">{strings.leadership}</h4>
                 <ul class="space-y-1 text-sm text-gray-700">
                   {competencies.leadership.map(skill => (
                     <li class="flex items-center">
@@ -255,7 +243,7 @@ const t = translations[lang as keyof typeof translations] || translations.en;
               </div>
 
               <div>
-                <h4 class="font-semibold text-xs text-gray-900 uppercase tracking-wider mb-2">{t.technology}</h4>
+                <h4 class="font-semibold text-xs text-gray-900 uppercase tracking-wider mb-2">{strings.technology}</h4>
                 <ul class="space-y-1 text-sm text-gray-700">
                   {competencies.technology.map(skill => (
                       <li class="flex items-center">
@@ -272,17 +260,17 @@ const t = translations[lang as keyof typeof translations] || translations.en;
             {/* About Me Section (moved from markdown body) */}
             {frontmatter.about && (
               <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 !mt-0">{lang === 'de' ? 'Über Mich' : 'About Me'}</h2>
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 mt-0">{strings.aboutTitle}</h2>
                 <div class="whitespace-pre-line mb-8">{frontmatter.about}</div>
 
                 {/* Leadership Pillars */}
                 {leadershipPillars && leadershipPillars.length > 0 && (
                   <div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">{lang === 'de' ? 'Die 4 Säulen meines Führungsstils' : 'The 4 Pillars of My Leadership Style'}</h3>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">{strings.leadershipPillarsTitle}</h3>
                      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {leadershipPillars.map((pillar) => (
-                        <div class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-picton-blue-100 dark:border-gray-700 break-inside-avoid print:border-gray-200 print:shadow-none print:rounded-lg">
-                          <h4 class="font-bold text-lg mb-2 text-gray-900 dark:text-white">{pillar.title}</h4>
+                        <div class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-picton-blue-100 dark:border-gray-700 break-inside-avoid print:border-gray-200 print:shadow-none print:rounded-lg flex flex-col justify-center">
+                          <h4 class="font-bold text-lg mb-2 mt-2 text-gray-900 dark:text-white">{pillar.title}</h4>
                           <p class="text-sm text-gray-700 dark:text-gray-300">{pillar.description}</p>
                         </div>
                       ))}
