@@ -35,8 +35,10 @@ competencies:
 languages:
   - language: Deutsch
     level: Muttersprache
+    percent: 100
   - language: Englisch
     level: Fließend
+    percent: 90
 
 leadershipPillars:
   - title: Vertrauen

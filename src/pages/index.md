@@ -35,8 +35,10 @@ competencies:
 languages:
   - language: German
     level: Native
+    percent: 100
   - language: English
     level: Fluent
+    percent: 90
 
 leadershipPillars:
   - title: Trust

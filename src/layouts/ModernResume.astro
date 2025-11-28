@@ -34,6 +34,7 @@ interface Props {
     languages: {
       language: string;
       level: string;
+      percent: number;
     }[];
     leadershipPillars?: {
       title: string;
@@ -72,13 +73,7 @@ const FORCE_THEME = import.meta.env.FORCE_THEME || "";
 const { frontmatter } = Astro.props;
 const { name, role, socials, facts, competencies, languages, pdfLink, leadershipPillars, experience, education, strings, lang = 'en' } = frontmatter;
 
-function getLanguagePercent(level: string) {
-  const l = level.toLowerCase();
-  if (l.includes('native') || l.includes('muttersprache')) return 100;
-  if (l.includes('fluent') || l.includes('fließend')) return 90;
-  if (l.includes('proficient')) return 75;
-  return 60;
-}
+
 
 const linkedIn = socials.find(s => s.name.toLowerCase().includes('linkedin'));
 const contactMe = socials.find(s => s.name.toLowerCase().includes('contact') || s.name.toLowerCase().includes('email'));
@@ -159,7 +154,7 @@ const contactMe = socials.find(s => s.name.toLowerCase().includes('contact') || 
             <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4">{strings.languages}</h3>
             <div class="space-y-3">
               {languages.map(lang => (
-                <LanguageBar language={lang.language} level={lang.level} percent={getLanguagePercent(lang.level)} />
+                <LanguageBar language={lang.language} level={lang.level} percent={lang.percent} />
               ))}
             </div>
           </div>
