@@ -106,9 +106,7 @@ const contactMe = socials.find(s => s.name.toLowerCase().includes('contact') || 
           <!-- Profile Card -->
           <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 lg:sticky lg:top-8 print:static print:shadow-none print:border-slate-300 print:row-span-3">
             <div class="flex flex-col items-center text-center">
-              <div class="w-24 h-24 bg-indigo-800 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-sm mb-4 print:shadow-none">
-                {name.split(' ').map(n => n[0]).join('')}
-              </div>
+              <img src="/profileshot.jpg" alt={name} class="w-36 h-36 rounded-full shadow-sm mb-4 print:shadow-none object-cover" />
               <h1 class="text-2xl font-bold text-slate-900">{name}</h1>
               <p class="text-indigo-800 font-medium">{role}</p>
               
