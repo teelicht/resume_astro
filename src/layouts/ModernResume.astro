@@ -26,6 +26,7 @@ interface Props {
       location: string;
       nationality: string;
       birth: string;
+      website?: string;
     };
     competencies: {
       leadership: string[];
@@ -134,6 +135,14 @@ const contactMe = socials.find(s => s.name.toLowerCase().includes('contact') || 
                 <Icon name="mdi:email" class="w-4 h-4 text-slate-400 mr-3" />
                 <a href={`mailto:${facts.email}`} class="hover:text-indigo-800 transition-colors">{facts.email}</a>
               </div>
+              {facts.website && (
+                <div class="flex items-center text-slate-600">
+                  <Icon name="mdi:web" class="w-4 h-4 text-slate-400 mr-3" />
+                  <a href={facts.website} target="_blank" rel="noopener noreferrer" class="hover:text-indigo-800 transition-colors">
+                    {facts.website.replace(/^https?:\/\//, '')}
+                  </a>
+                </div>
+              )}
               {linkedIn && (
                 <div class="flex items-center text-slate-600">
                   <Icon name="mdi:linkedin" class="w-4 h-4 text-slate-400 mr-3" />

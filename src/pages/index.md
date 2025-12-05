@@ -12,6 +12,7 @@ facts:
   location: Mödling, Österreich
   nationality: Austrian citizenship
   email: t.lichtenecker@gmail.com
+  website: https://www.lichtenecker.info
 
 socials:
   - name: Contact Me
