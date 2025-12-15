@@ -23,6 +23,7 @@ interface Props {
     }[];
     facts: {
       email: string;
+      phone?: string;
       location: string;
       nationality: string;
       birth: string;
@@ -135,6 +136,12 @@ const contactMe = socials.find(s => s.name.toLowerCase().includes('contact') || 
                 <Icon name="mdi:email" class="w-4 h-4 text-slate-400 mr-3" />
                 <a href={`mailto:${facts.email}`} class="hover:text-indigo-800 transition-colors">{facts.email}</a>
               </div>
+              {facts.phone && (
+                <div class="hidden print:flex items-center text-slate-600">
+                  <Icon name="mdi:phone" class="w-4 h-4 text-slate-400 mr-3" />
+                  <a href={`tel:${facts.phone}`} class="hover:text-indigo-800 transition-colors">{facts.phone}</a>
+                </div>
+              )}
               {facts.website && (
                 <div class="flex items-center text-slate-600">
                   <Icon name="mdi:web" class="w-4 h-4 text-slate-400 mr-3" />

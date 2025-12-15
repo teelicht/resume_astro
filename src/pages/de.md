@@ -12,6 +12,7 @@ facts:
   location: Mödling, Österreich
   nationality: Österreichische Staatsbürgerschaft
   email: t.lichtenecker@gmail.com
+  phone: "+43 650 900 5 009"
   website: https://www.lichtenecker.info
 
 socials:
