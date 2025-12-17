@@ -53,7 +53,7 @@ leadershipPillars:
     description: Stillstand ist keine Option. Ich sehe es als meine Pflicht, das Potenzial des Einzelnen zu erkennen und zu fördern. Die Weiterentwicklung der Mitarbeitenden ist nicht nur ein Gewinn für die Organisation, sondern eine notwendige Investition in die persönliche Zukunft jedes Einzelnen.
 
 experience:
-  - title: Chief Product Owner eCommerce
+  - title: Chief Product Owner eCommerce Customer Touchpoints
     company: REWE International AG
     date: Jan 2022 - Heute
     description: |

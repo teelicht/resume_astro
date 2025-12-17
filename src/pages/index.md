@@ -53,7 +53,7 @@ leadershipPillars:
     description: Standing still is not an option. I consider it my duty to recognise and foster individual potential. Employee development is not just a gain for the organisation, but a necessary investment in the personal future of every single individual.
 
 experience:
-  - title: Chief Product Owner eCommerce
+  - title: Chief Product Owner eCommerce Customer Touchpoints
     company: REWE International AG
     date: Jan 2022 - Present
     description: |
